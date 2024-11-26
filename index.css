@@ -1,3 +1,57 @@
-.nav-bar {
+:root {
+/* Generated at https://coolors.co/e5ffde-bbcbcb-9590a8-634b66-18020c */
+/* CSS HEX */
+--nyanza: #e5ffdeff;
+--ash-gray: #bbcbcbff;
+--cool-gray: #9590a8ff;
+--english-violet: #634b66ff;
+--licorice: #18020cff;
+
+/* CSS HSL */
+--nyanza: hsla(107, 100%, 94%, 1);
+--ash-gray: hsla(180, 13%, 76%, 1);
+--cool-gray: hsla(253, 12%, 61%, 1);
+--english-violet: hsla(293, 15%, 35%, 1);
+--licorice: hsla(333, 85%, 5%, 1);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family:Arial, Helvetica, sans-serif;
+    line-height: 1.6;
+}
+.navbar {
     list-style-type: none;
+    margin: 0 auto;
+    padding: 0;
+    max-width: 1200px;
+    width: 90%;
+    display: flex;
+    background-color: var(--english-violet);
+    top: 0;
+    position: sticky;
+    z-index: 1000;
+    align-items: center;
+}
+
+.navbar li {
+    margin: 0;
+}
+
+.navbar li a {
+    text-decoration: none;
+    color: white;
+    padding: 10px;
+    display: block;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.navbar a:hover {
+    background-color: var(--licorice);
+    color: var(--nyanza);
 }
