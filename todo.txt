@@ -1,0 +1,6 @@
+- Decide if search bar should update the page live
+- Decide if the search should be a new page or on the current page
+- Link up the API calls with the search bar
+- Create a database for users
+- Create a database for reviews
+- Create a database for saved books
