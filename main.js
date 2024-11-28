@@ -12,21 +12,6 @@ function fireFetch(q) {
         .catch(error => console.error('Error: ', error));
 }
 
-async function fetchDesc(key) {
-    const url = `https://openlibrary.org/works/${key}.json`;
-    const options = {
-        method: 'GET',
-    };
-    let description = 'Description unavailable';
-    try {
-        const response = await fetch(url, options);
-        const data = await response.json();
-        description = data.description;
-    } catch (error) { console.error('Error: ', error); }
-
-    return description;
-}
-
 function displaySearchResults(data) {
     let output = document.getElementById("search_output");
     output.innerHTML = '';
