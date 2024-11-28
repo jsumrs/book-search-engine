@@ -26,6 +26,12 @@ body {
     line-height: 1.6;
 }
 
+tr td{
+    border-style: solid;
+    border-width: 3px;
+    border-radius: 5px;
+}
+
 .navbar {
     list-style-type: none;
     margin: 0 auto;
@@ -82,4 +88,12 @@ body {
 
 #navbar-logo-anchor:hover {
     background-color: var(--english-violet);
+}
+
+#search_output {
+    max-width: 1200px;
+    display: flex;
+    width: 78%;
+    margin: 5px auto 0px;
+    background-color:azure;
 }

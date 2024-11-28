@@ -22,9 +22,7 @@ if (isset($_SESSION['username'])) {
             <li><a href="index.php">Home</a></li>
             <li><a href="browse.php">Browse</a></li>
             <li class="navbar-search-box">
-                <form action="process_search.php" method="POST">
-                    <input  type="text" placeholder="Search books..." />
-                </form>
+                <input id="searchbar" type="text" placeholder="Search books..." />
             </li>
             <?php 
             if (isset($username)) {
@@ -37,6 +35,8 @@ if (isset($_SESSION['username'])) {
             
         </ul>
     </nav>
+    <table id="search_output"></table>
+    <script src="main.js"></script>
 </body>
 
 </html>
