@@ -17,11 +17,11 @@ if (isset($_SESSION['username'])) {
         </li>
         <?php
         if (isset($username)) {
-            echo "<li class='user-buttons'><a href='user_library.php'>My Library</a></li>";
-            echo "<li class='user-buttons'><a href='logout.php'>Logout</a></li>";
+            echo "<li style='margin-left: auto'><a href='user_library.php'>My Library</a></li>";
+            echo "<li><a href='logout.php'>Logout</a></li>";
         } else {
-            echo "<li class='user-buttons'><a href='login.php'>Login</a></li>";
-            echo "<li class='user-button'><a href='register.php'>Register</a></li>";
+            echo "<li style='margin-left: auto'><a href='login.php'>Login</a></li>";
+            echo "<li ><a href='register.php'>Register</a></li>";
         }
         ?>
         
