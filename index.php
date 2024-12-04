@@ -9,8 +9,7 @@
 
 <body>
     <?php include 'navbar.php'; ?>
-    <table id="search_output"></table>
-    <script src="main.js"></script>
+    <div id="welcome-banner">Search to get started~!</div>
 </body>
 
 </html>

@@ -59,17 +59,11 @@ tr td{
     transition: background-color 0.3s ease, color 0.3s ease;
 }
 
-.navbar li form input {
-    margin-left: auto;
-}
 .navbar a:hover {
     background-color: var(--licorice);
     color: var(--nyanza);
 }
 
-.navbar-search-box {
-    margin-left:auto;
-}
 
 .navbar-logo {
     width: auto;
@@ -78,8 +72,9 @@ tr td{
     margin: 5px 10px;
 }
 
-.navbar-search-box input {
-    height: auto;
+
+.user-buttons {
+    margin-left: auto;
 }
 
 #navbar-logo-anchor {
@@ -90,10 +85,25 @@ tr td{
     background-color: var(--english-violet);
 }
 
-#search_output {
+#navbar-search-box {
+    height: 100%;
+    width: 400px;
+}
+
+#search-output {
     max-width: 1200px;
     display: flex;
     width: 78%;
     margin: 5px auto 0px;
-    background-color:azure;
+    background-color: --var(--nyanza);
+}
+
+#welcome-banner {
+    text-align: center;
+    margin: 20px auto;
+    width: 400px;
+    background-color: var(--nyanza);
+    border-color: var(--cool-gray);
+    border-style: solid;
+    border-radius: 5px;
 }
