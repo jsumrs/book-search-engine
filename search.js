@@ -40,6 +40,7 @@ document.getElementById("navbar-search-box").addEventListener("input", (event) =
         } else {
             document.getElementById('search-output').innerHTML = '';
         }
+        document.getElementById('welcome-banner').remove();
     }, 300);
 });
 

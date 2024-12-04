@@ -1,5 +1,4 @@
 <?php
-$search_query = htmlspecialchars($_GET['search_query']);
 ?>
 
 <!DOCTYPE html>
@@ -13,11 +12,16 @@ $search_query = htmlspecialchars($_GET['search_query']);
 
 <body>
     <?php include 'navbar.php'; ?> <!-- This should be kept at the top of <body> -->
-    <table id="search-output"></table>
-    <?php if (!empty($search_query)) {
+    <table id="search-output">
+        
+    <?php if (!empty($_GET['search_query'])) {
+        $search_query = htmlspecialchars($_GET['search_query']);
         echo "<script type='text/javascript'> fireFetch('{$search_query}') </script>";
+    } else {
+        echo "<h1 id='welcome-banner'>Search to get started~!</h1>";
     }
     ?>
+    </table>
 </body>
 
 </html>
