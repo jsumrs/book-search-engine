@@ -9,7 +9,7 @@
 
 <body>
     <?php include 'navbar.php'; ?>
-    <div id="welcome-banner">Search to get started~!</div>
+    <h1 id="welcome-banner">Search to get started~!</h1>
 </body>
 
 </html>

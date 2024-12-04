@@ -13,7 +13,7 @@ function fireFetch(q) {
 }
 
 function displaySearchResults(data) {
-    let output = document.getElementById("search_output");
+    let output = document.getElementById("search-output");
     output.innerHTML = '';
     if (data && data.docs) {
         const results = data.docs.map(book => {
@@ -30,7 +30,7 @@ function displaySearchResults(data) {
 
 
 let debounceTimeout;
-document.getElementById("searchbar").addEventListener("input", (event) => {
+document.getElementById("navbar-search-box").addEventListener("input", (event) => {
     const q = event.target.value;
 
     clearTimeout(debounceTimeout);
@@ -38,7 +38,7 @@ document.getElementById("searchbar").addEventListener("input", (event) => {
         if (q && q.length >= 3) {
             fireFetch(q);
         } else {
-            document.getElementById('search_output').innerHTML = '';
+            document.getElementById('search-output').innerHTML = '';
         }
     }, 300);
 });
