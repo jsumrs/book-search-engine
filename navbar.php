@@ -12,7 +12,7 @@ if (isset($_SESSION['username'])) {
         <li><a href="index.php">Home</a></li>
         <li>
             <form action="search.php" method="GET">
-                <input id="navbar-search-box" name="search_query" type="text" placeholder="Search books..." />
+                <input autocomplete="off"  id="navbar-search-box" name="search_query" type="text" placeholder="Search books..." />
             </form>
         </li>
         <?php

@@ -18,8 +18,8 @@ function displaySearchResults(data) {
     if (data && data.docs) {
         const results = data.docs.map(book => {
             return `<tr>
-                        <td><img src=https://covers.openlibrary.org/b/id/${book.cover_i}-S.jpg></td>
-                        <td><h3>${book.title}</h3><p>${book.author_name}</p></td>
+                        <td><img src='https://covers.openlibrary.org/b/id/${book.cover_i}-S.jpg'></td>
+                        <td><h3><a href='book.php?key=${book.key}'>${book.title}</a></h3><p>${book.author_name}</p></td>
                     </tr>`;
         });
         output.innerHTML = results.join('');

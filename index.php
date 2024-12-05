@@ -9,7 +9,9 @@
 
 <body>
     <?php include 'navbar.php'; ?>
-    <h1 id="welcome-banner">Search to get started~!</h1>
+    <table id="search-output">
+        <h1 id="welcome-banner">Search to get started~!</h1>
+    </table>
 </body>
 
 </html>
