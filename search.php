@@ -11,7 +11,7 @@
 </head>
 
 <body>
-    <!-- This should be kept at the top of <body> -->
+    <!-- navbar include should be kept at the top of <body> -->
     <?php include 'navbar.php'; ?>
     <table id="search-output">
         <?php if (!empty($_GET['search_query'])) {
