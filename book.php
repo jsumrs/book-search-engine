@@ -19,7 +19,7 @@ $key = $_GET['key'];
     <div class="book-container">
         <!-- Left Section -->
         <div class="cover-section">
-            <img id="book-cover" src="" alt="The book's cover"></img>
+            <img id="book-cover" src="" alt="Cover unavailable."></img>
             <button class="bookmark-btn">Save to library</button>
         </div>
 

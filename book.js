@@ -23,13 +23,8 @@ function displayBook(data) {
     document.getElementById('book-cover').src = `https://covers.openlibrary.org/b/id/${data.covers[0]}-L.jpg`;
     document.getElementById('title').innerHTML = data.title;
     document.getElementById('book-title').innerHTML = data.title;
-    let description;
-    if (data.description) {
-        description = data.description.value || "Description unavailable.";
-    } else {
-        description = "Description unavailable.";
-    }
-    document.getElementById('book-description').innerHTML = description;
+    let desc = data.description.value || data.description || "Description unavailable.";
+    document.getElementById('book-description').innerHTML = desc;
 
     // Display author data.
     const authorKeys = data.authors.map(author => author.author.key); // silly syntax due to naming schemes :P

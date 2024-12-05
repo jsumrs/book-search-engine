@@ -80,8 +80,8 @@ button:hover {
     padding: 20px;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
     align-items: center;
+    box-sizing: border-box;
     background-color: var(--nyanza);
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     max-width: 200px;
