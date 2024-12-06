@@ -2,7 +2,9 @@
 if (session_status() === PHP_SESSION_NONE) {
     session_start();
 }
-$key = $_GET['key'];
+if(isset($_GET['key'])){
+    $key = htmlspecialchars($_GET['key']);
+}
 ?>
 
 <!DOCTYPE html>
@@ -20,7 +22,10 @@ $key = $_GET['key'];
         <!-- Left Section -->
         <div class="cover-section">
             <img id="book-cover" src="" alt="Cover unavailable."></img>
-            <button class="bookmark-btn">Save to library</button>
+            <form action="save_book.php" method="GET">
+                <input type="hidden" name="key" value="<?php echo $key ?>">
+                <button type="submit" class="bookmark-btn">Save to library</button>
+            </form>
         </div>
 
         <!-- Right Section -->
@@ -31,7 +36,17 @@ $key = $_GET['key'];
         </div>
     </div>
 
+
     <script src="book.js"></script>
+    <script>
+        <?php 
+        if($_COOKIE['not_logged_in']) {
+            echo "alert('You are not logged in!')";
+            unset($_COOKIE['not_logged_in']);
+            setcookie("not_logged_in", "", 1);
+        }
+        ?>
+    </script>
 </body>
 
 </html>
