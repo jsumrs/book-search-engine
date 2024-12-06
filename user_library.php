@@ -6,7 +6,7 @@ if (filter_input(INPUT_COOKIE, 'auth') != session_id()) {
 }
 
 $user_id = $_SESSION['user_id'];
-$mysqli = new mysqli("localhost", "root", "", "zbooks");
+$mysqli = new mysqli("localhost", "zbook_server", "gallstone ice sanded engross", "zbooks");
 
 if ($mysqli->connect_error) {
     die("Connection error: " . $mysqli->connect_error);
@@ -23,7 +23,7 @@ if ($mysqli->connect_error) {
 </head>
 
 <body>
-<?php include 'navbar.php'; ?>
+    <?php include 'navbar.php'; ?>
     <h1 id="welcome-banner">Welcome to your library!</h1>
     <table id="library-table">
         <thead>

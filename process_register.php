@@ -5,7 +5,7 @@ $username = filter_input(INPUT_POST, "username");
 $password = filter_input(INPUT_POST, "password");
 
 if ($username && $password) {
-    $mysqli = new mysqli("localhost", "root", "", "zbooks");
+    $mysqli = new mysqli("localhost", "zbook_server", "gallstone ice sanded engross", "zbooks");
     $stmt = $mysqli->stmt_init();
 
     // Check if user_name is taken

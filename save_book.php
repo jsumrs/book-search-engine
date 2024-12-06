@@ -18,7 +18,7 @@ $username = $_SESSION['username'];
 $user_id = $_SESSION['user_id'];
 $key = $_GET['key'];
 
-$mysqli = new mysqli("localhost", "root", "", "zbooks");
+$mysqli = new mysqli("localhost", "zbook_server", "gallstone ice sanded engross", "zbooks");
 $stmt = $mysqli->stmt_init();
 $stmt->prepare("SELECT book_key FROM savedbooks WHERE u_id=? AND book_key=?");
 $stmt->bind_param("is", $user_id, $key);

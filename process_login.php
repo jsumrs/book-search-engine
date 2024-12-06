@@ -7,8 +7,8 @@ if (!$username || !$password) {
     exit();
 }
 
-$mysqli = new mysqli("localhost", "root", "", "zbooks");
 
+$mysqli = new mysqli("localhost", "zbook_server", "gallstone ice sanded engross", "zbooks");
 $stmt = $mysqli->stmt_init();
 $stmt->prepare("SELECT id, username, password FROM users WHERE username=?");
 $stmt->bind_param("s", $username);
@@ -22,7 +22,7 @@ if (!$stored_password || !password_verify($password, $stored_password)) {
     exit();
 }
 
-if(session_status() === PHP_SESSION_NONE) session_start();
+if (session_status() === PHP_SESSION_NONE) session_start();
 setcookie("auth", session_id(), time() + 60 * 60 * 24);
 $_SESSION['user_id'] = $stored_id;
 $_SESSION['username'] = $stored_username;
