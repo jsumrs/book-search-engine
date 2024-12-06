@@ -170,6 +170,25 @@ button:hover {
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
+#library-table, #search-output{
+    max-width: 1200px;
+    width: 40%;
+    margin: 5px auto 0px;
+    background-color: var(--nyanza);
+}
+
+/* Source https://stackoverflow.com/a/3589627 */
+#library-table tr, #search-output tr {
+    outline: 1px solid #efefef;
+}
+
+#library-table tr:hover, #search-output tr:hover{
+    outline: 1px solid var(--licorice);
+}
+#library-table img {
+    width: 30%;
+}
+
 #navbar-logo-anchor {
     padding: 0;
 }
@@ -181,20 +200,6 @@ button:hover {
 #navbar-search-box {
     height: 100%;
     width: 400px;
-}
-
-#search-output {
-    max-width: 1200px;
-    display: flex;
-    width: 78%;
-    margin: 5px auto 0px;
-    background-color: --var(--nyanza);
-}
-
-#search-output tr td {
-    border-style: solid;
-    border-width: 3px;
-    border-radius: 5px;
 }
 
 #welcome-banner {
