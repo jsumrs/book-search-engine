@@ -8,3 +8,5 @@ A quick demonstration:
 
 https://github.com/user-attachments/assets/13d18b28-1c5a-4521-a312-4837e1842068
 
+**DO NOT USE THIS WITHOUT CHANGING THE DATABASE PASSWORDS**
+They are stored on the server BUT this is a public repository, so tread carefully.
